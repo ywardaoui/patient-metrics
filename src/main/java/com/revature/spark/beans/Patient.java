@@ -11,7 +11,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Patient {
+public class Patient implements Comparable<Patient>{
 
 	@Id
 	@Column(name="patient_id", nullable=false)
@@ -138,6 +138,17 @@ public class Patient {
 	public String toString() {
 		return "Patient [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", heartRate=" + heartRate
 				+ ", doctor=" + doctor + "]";
+	}
+
+	@Override
+	public int compareTo(Patient o) {
+		if(this.heartRate > o.heartRate) {
+			return 1;
+		}else if(this.heartRate < o.heartRate) {
+			return -1;
+		}else {
+			return 0;
+		}
 	}
 	
 }
