@@ -20,7 +20,7 @@
   <div class="container">
       <!-- Header -->
       <div class="header">
-            <a href="./index.html"><img src="./logo3.png" id="logo" class="img-fluid" ></a>
+            <a href="./index.html"><img src="./logo3.png" id="logo" class="img-fluid"></a>
             <div class="header-right">
                <a href="./index.html">Patient Table</a>
                <a href="./statics.html">Patients Statistic</a>
@@ -28,24 +28,35 @@
         </div>
            </div>
       <!-- Header -->
-
-    <table id="table" class="table table-striped">
+<br>
+  <p id=title >Retrieving all patients' Min, Max, Average, and Median Heart Rate.</p>  
+      <div id="info">
+  <p>Minimum HeartRate</p>
+   <p id="min"></p>
+  <p>Maximum HeartRate</p>
+   <p id="max"></p>
+  <p>Average HeartRate</p>
+   <p id="avg"></p>
+  <p>Median HeartRate</p>
+   <p id="med"></p>
+         </div>
+ <br>
+<p id=title > showing the patient's highest heart rate for each doctor </p><br>
+    <table id="table2" class="table table-striped">
 	<thead class="thead-dark">
     <tr>
       <th scope="col">Id</th>
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>
-      <th scope="col">Heart Rate</th>
-      <th scope="col">Doctor</th>
-      </tr>
+      <th scope="col">Highest Heart Rate</th>
+     </tr>
 		
   </thead>
 </table>
-
            <!-- Footer -->
 <footer class="footer-distributed">
-    <div class="footer-left">    
-     <div class="homelogo"><img src="./logo3.png" id="logo" class="img-fluid"></a></div>
+    <div class="footer-left">
+     <div class="homelogo"><img src="./logo3.png" id="logo" class="img-fluid"></div>
       <p class="footer-company-name">Youness Wardaoui © 2019</p>
     </div>
     <div class="footer-center">
@@ -65,7 +76,7 @@
     <div class="footer-right">
       <p class="footer-company-about">
         <span>About this Web page</span>
-        This webpage was made for the purpose of the presentation of HTML,CSS and Js at Revature  (patient-metrics app) training center in Reston,VA.
+        This Web page was made for the purpose of the presentation of HTML,CSS and Js  (patient-metrics app) at Revature training center in Reston,VA.
       </p>
       <div class="footer-icons">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -76,6 +87,6 @@
     </div>
   </footer>
 </div>
-  <script src="metrics.js"></script>
+  <script src="statics.js"></script>
 </body>
 </html>
