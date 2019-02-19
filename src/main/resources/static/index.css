@@ -63,9 +63,8 @@
 font-size:1.5vw;
 }
 #title{
-	font-size:1.5vw;
-	font-weight: bold;
-	
+	font-size:1.3vw;
+    font-family:'Monotype Sorts', dingbats, 'ITC Zapf Dingbats', fantasy;
 }
 #info #max{
   color: red;

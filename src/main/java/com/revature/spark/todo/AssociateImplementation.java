@@ -102,10 +102,11 @@ public class AssociateImplementation {
 		System.out.println(ArrHeartRate);
 		//finding median
 		double median;
-		
+		//if even 
 		if (ArrHeartRate.length % 2 == 0) {
 			median = (ArrHeartRate[ArrHeartRate.length/2] + ArrHeartRate[ArrHeartRate.length/2 - 1])/2;
 		}
+		//if odd
 		else {
 		    median = ArrHeartRate [ArrHeartRate.length/2];
 		}
@@ -130,6 +131,7 @@ public class AssociateImplementation {
         }
         
         for (int i=0; i<patients.size();i++) {
+            System.out.println(patients.get(i).getDoctor());
         	if (map.get(patients.get(i).getDoctor()) < patients.get(i).getHeartRate()) {
              map.put(patients.get(i).getDoctor(),patients.get(i).getHeartRate());
         		}
